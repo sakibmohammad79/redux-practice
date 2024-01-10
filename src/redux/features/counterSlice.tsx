@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
-type TCounterType = {
+type TInitialState = {
   count: number;
 };
 
-const initialState: TCounterType = { count: 0 };
+const initialState: TInitialState = { count: 0 };
 
-const counterSlice = createSlice({
+export const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
